@@ -1,2 +1,3 @@
 # node-cloudformation
-Javascript Cloudformation generator 
+
+Node Cloudformation generator
