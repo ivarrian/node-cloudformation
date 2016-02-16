@@ -6,14 +6,17 @@ var defaultFormatVersion = "2010-09-09";
 var CloudFormation = function(){
   switch(arguments.length){
     case 0:
+      // no arguments
       version = undefined;
       description = undefined;
     break;
     case 1:
+      // 1 argument, assumed to be description
       version = undefined;
       description = arguments[0];
     break;
     case 2:
+      // 2 arguments, version,description in that order
       version = arguments[0];
       description = arguments[1];
     break;
@@ -37,7 +40,7 @@ CloudFormation.prototype.addParameter = function(name,parameter){
   if(typeof this.parameters == 'undefined' ) {
     this.parameters = [];
   }
-  validator.validate(parameter);
+  validator.validateParameter(parameter);
   this.parameters[name]= parameter;
 }
 
