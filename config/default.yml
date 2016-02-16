@@ -1,0 +1,15 @@
+Validation:
+  Parameters:
+    Properties:
+      - Type:
+        Required: No
+      - Default
+      - NoEcho
+      - AllowedValues
+      - AllowedPattern
+      - MaxLength
+      - MinLength
+      - MaxValue
+      - MinValue
+      - Description
+      - ConstraintDescription
